@@ -12,9 +12,6 @@ require 'github/markup'
 if ARGV[0].nil?
   puts 'Please provide the markdown file or an argument'
   abort
-elsif ARGV[0] == '--version'
-  puts 'Marker Version 0.1'
-  abort
 end
 
 path = File.dirname(File.expand_path(ARGV[0])) + '/index.html'
