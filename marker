@@ -10,7 +10,7 @@ require 'webrick'
 require 'github/markup'
 
 if ARGV[0].nil?
-  puts 'Please provide the markdown file'
+  puts 'Please provide the markdown file or an argument'
   abort
 elsif ARGV[0] == '--version'
   puts 'Marker Version 0.1'
