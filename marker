@@ -10,8 +10,7 @@ require 'webrick'
 require 'github/markup'
 
 if ARGV[0].nil?
-  puts 'Please provide the markdown file or an argument'
-  abort
+  abort 'Please provide the markdown file'
 end
 
 path = File.dirname(File.expand_path(ARGV[0])) + '/index.html'
